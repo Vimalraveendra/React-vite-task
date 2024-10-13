@@ -1,0 +1,118 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+
+}
+.App{
+  padding:10px; 
+  text-align: center;
+}
+h1{
+  margin:10px 0px 10px 0px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #dbd2d2;
+  cursor: pointer;
+
+}
+button:hover {
+  background-color: #09bb41;
+  color:#fff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.moves-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:#fff;
+  margin-top:20px;
+}
+.card-grid{
+  width: 700px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+
+
+}
+
+.card{
+  border-radius: 5px;
+  position: relative;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  border:2px solid #fff;
+  display: block;
+
+}
+.card .front{
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position:absolute;
+}
+.flipped  .front{
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+background:#fff;
+}
+
+.card  .back{
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped  .back{
+  transform: rotateY(90deg);
+  transition-delay: 0.2s;
+}
+.turns{
+  color:#fff;
+}
+@media only screen and (max-width: 1280px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    max-width:70vw;
+  }
+  .card{
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    max-width:70vw;
+    
+  }
+  .card{
+    /* max-width: 120px; */
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .card-grid {
+    max-width:95vw;
+    padding:20px;
+  }
+  .moves-container{
+    flex-direction: column;
+  }
+  p{
+    font-size: 1rem;
+  }
+}

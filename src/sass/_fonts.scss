@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+
+@mixin primeFont() {
+    font-family: 'Rubik Maze', cursive;
+  }
+  @mixin secondaryFont() {
+    font-family: 'Ubuntu', sans-serif;
+  }
