@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# General info
+This project is built with React,Vite,Typescript &  Zustand, in order to build a memory card matching game.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Setup
+To run this project, install it locally using npm
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1.Clone this repo.
 
-## Expanding the ESLint configuration
+2.cd react-vite-task.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3.Run npm install.
 
-- Configure the top-level `parserOptions` property like this:
+4.npm run dev
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Application Setup:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1.created create-react-vite-app boiler plate.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2.created reusable components,containers & Zustand store.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. The player reveals pairs of identical image tiles.
+
+4.created a responsive page showing  the memory game  
+
+5.created no of attempts , game duration & and date of each game.
+
+6.Added types with Typescript as well.
+
+## Solution built with:
+* React components,Vite , Zustand & Typescript.
+* ES2015 & ES2016.
+* Code linter and formatter.
+* CSS,FlexBox,SCSS.
+* libraries used React,Zustand & Typescript.
